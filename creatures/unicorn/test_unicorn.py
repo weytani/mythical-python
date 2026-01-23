@@ -16,7 +16,7 @@ Learning Objectives:
 
 import pytest
 
-from creatures.unicorn import Unicorn
+from creatures.unicorn.unicorn import Unicorn
 
 
 class TestUnicornCreation:

@@ -1,4 +1,4 @@
-"""Mythical creatures for TDD learning."""
+"""Unicorn - A magical creature for TDD learning."""
 
 from creatures.unicorn.unicorn import Unicorn
 
