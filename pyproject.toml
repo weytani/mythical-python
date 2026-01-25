@@ -31,7 +31,7 @@ where = ["."]
 include = ["creatures*"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "creatures"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
 addopts = "-v"
