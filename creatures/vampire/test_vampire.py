@@ -18,6 +18,7 @@ import pytest
 from creatures.vampire.vampire import Vampire
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestVampireCreation:
     """Tests for Vampire instantiation and default values."""
 
@@ -37,6 +38,7 @@ class TestVampireCreation:
         assert vampire.pet == "wolf"
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestVampireThirst:
     """Tests for Vampire thirst state - the core lesson of this exercise."""
 
@@ -64,6 +66,7 @@ class TestVampireThirst:
         assert vampire.thirsty is False
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestVampireMultipleInstances:
     """Tests ensuring each Vampire has independent state."""
 

@@ -18,6 +18,7 @@ import pytest
 from creatures.pirate.pirate import Pirate
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateCreation:
     """Tests for Pirate instantiation and default values."""
 
@@ -47,6 +48,7 @@ class TestPirateCreation:
         assert pirate.booty == 0
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateHeinousActs:
     """Tests for cursed state triggered by heinous acts."""
 
@@ -93,6 +95,7 @@ class TestPirateHeinousActs:
         assert pirate.cursed is True
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateBooty:
     """Tests for booty accumulation - the wallet pattern."""
 
@@ -119,6 +122,7 @@ class TestPirateBooty:
         assert pirate.cursed is False
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateIndependentStates:
     """Tests ensuring booty and curse are independent."""
 
@@ -145,6 +149,7 @@ class TestPirateIndependentStates:
         assert pirate.cursed is True
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateMultipleInstances:
     """Tests ensuring each Pirate has independent state."""
 

@@ -18,6 +18,7 @@ import pytest
 from creatures.wizard.wizard import Wizard
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestWizardCreation:
     """Tests for Wizard instantiation and default values."""
 
@@ -48,6 +49,7 @@ class TestWizardCreation:
         assert wizard.rested is True
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestWizardIncantation:
     """Tests for string manipulation via incantation method."""
 
@@ -74,6 +76,7 @@ class TestWizardIncantation:
         assert wizard.incantation("whisper") == "sudo whisper"
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestWizardCasting:
     """Tests for casting spells and fatigue."""
 
@@ -98,6 +101,7 @@ class TestWizardCasting:
         assert "cast" in result.lower() or "spell" in result.lower()
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestWizardRest:
     """Tests for wizard rest/recovery."""
 
@@ -117,6 +121,7 @@ class TestWizardRest:
         assert wizard.rested is True
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestWizardMultipleInstances:
     """Tests ensuring each Wizard has independent state."""
 
