@@ -19,6 +19,7 @@ import pytest
 from creatures.medusa.medusa import Medusa, Person
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPersonCreation:
     """Tests for Person instantiation."""
 
@@ -33,6 +34,7 @@ class TestPersonCreation:
         assert person.stoned is False
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestMedusaCreation:
     """Tests for Medusa instantiation."""
 
@@ -48,6 +50,7 @@ class TestMedusaCreation:
         assert len(medusa.statues) == 0
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestMedusaStare:
     """Tests for Medusa's stare ability - the core lesson."""
 
@@ -98,6 +101,7 @@ class TestMedusaStare:
         assert all(v.stoned for v in [v1, v2, v3])
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestMedusaStatueLimit:
     """Tests for FIFO queue logic - max 3 statues."""
 
@@ -169,6 +173,7 @@ class TestMedusaStatueLimit:
         assert v2.stoned is False
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestMedusaMultipleInstances:
     """Tests ensuring each Medusa has independent state."""
 
@@ -201,6 +206,7 @@ class TestMedusaMultipleInstances:
         assert victim.stoned is True
 
 
+@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestObjectReferences:
     """Tests demonstrating object reference behavior."""
 
