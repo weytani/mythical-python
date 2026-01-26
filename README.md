@@ -15,10 +15,7 @@ cd mythical-python
 
 Create and activate a virtual environment:
 
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+https://stevekinney.com/writing/setup-python
 
 ### 3. Install Dependencies
 
@@ -86,36 +83,43 @@ pytest -v
 Work through these creatures **in order**. Each one builds on concepts from the previous exercises.
 
 ### 1. Unicorn
+
 **Concepts:** Classes, `__init__`, instance attributes, default parameters, type hints, boolean methods, f-strings
 
 The Unicorn introduces the fundamentals of Python classes. You'll learn how to create objects with required and optional attributes, and write simple methods.
 
 ### 2. Dragon
+
 **Concepts:** State accumulation, counters, `@property` decorator, computed/derived state, encapsulation
 
 The Dragon teaches you about tracking state over time. You'll learn how to use the `@property` decorator to compute values dynamically rather than storing them.
 
 ### 3. Vampire
+
 **Concepts:** Mutable state, internal state initialization, state mutation through methods
 
 The Vampire demonstrates how objects can change over time. You'll learn the difference between constructor arguments and internal state.
 
 ### 4. Hobbit
+
 **Concepts:** Lifecycle modeling, boundary conditions, age-based state transitions, `@property` for lifecycle states
 
 The Hobbit teaches lifecycle modeling with age-based transitions. Pay close attention to boundary conditions - this is a critical TDD skill!
 
 ### 5. Pirate
+
 **Concepts:** State flags, accumulators, threshold-triggered state, multiple independent state mechanisms
 
 The Pirate introduces the difference between computed state (like Dragon's hunger) and triggered state (once cursed, always cursed).
 
 ### 6. Wizard
+
 **Concepts:** Boolean default parameters, string transformation, resource management
 
 The Wizard emphasizes string manipulation and boolean arguments in constructors.
 
 ### 7. Medusa
+
 **Concepts:** Object interaction, one-to-many relationships, state mutation across objects, FIFO queues, object references
 
 Medusa represents a major complexity jump. You'll work with two classes that interact, managing collections of objects and understanding Python's reference semantics.
