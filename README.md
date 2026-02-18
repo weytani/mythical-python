@@ -124,6 +124,30 @@ The Wizard emphasizes string manipulation and boolean arguments in constructors.
 
 Medusa represents a major complexity jump. You'll work with two classes that interact, managing collections of objects and understanding Python's reference semantics.
 
+### 8. Fairy
+
+**Concepts:** Nested mutable objects, counter-triggered state transitions, mutating dict arguments
+
+The Fairy teaches nested data manipulation and state machines. You'll learn to manage dicts-within-dicts, accumulate state across method calls, and handle counter-triggered transitions.
+
+### 9. Sphinx
+
+**Concepts:** FIFO queues, find-and-remove patterns, conditional return values, string interpolation
+
+The Sphinx is data-structure focused. You'll implement a sliding window queue (max 3), search-and-remove logic, and conditional return strings with interpolated values.
+
+### 10. Ogre
+
+**Concepts:** Two cooperating classes, modulo arithmetic, chained counters, cross-object mutation
+
+The Ogre introduces chained counter logic across two classes. Every 3rd encounter triggers a swing, every 2nd swing triggers a knockout. Tracking independent counters is the key challenge.
+
+### 11. Direwolf
+
+**Concepts:** Bidirectional state mutation, location-matching guards, capacity constraints, derived properties
+
+The Direwolf is the capstone exercise. Two classes with guard clauses, capacity limits, and bidirectional state changes build on everything learned in previous exercises.
+
 ## Tips for Success
 
 - **Read the test file first** - The docstrings explain what each test expects
