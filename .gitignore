@@ -77,3 +77,6 @@ dmypy.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Session docs
+session_*.md
