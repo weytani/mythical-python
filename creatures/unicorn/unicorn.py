@@ -12,4 +12,7 @@ This module introduces fundamental Python OOP concepts:
 
 
 class Unicorn:
-    pass
+    def __init__(self, name: str) -> None:
+        self.name = name
+        self.color = 'silver'
+        
