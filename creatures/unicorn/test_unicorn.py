@@ -27,13 +27,11 @@ class TestUnicornCreation:
         unicorn = Unicorn("Robert")
         assert unicorn.name == "Robert"
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_has_default_color_silver(self):
         """A Unicorn's color defaults to 'silver' if not specified."""
         unicorn = Unicorn("Robert")
         assert unicorn.color == "silver"
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_is_silver_returns_true_for_default_color(self):
         """is_silver() returns True when color is the default 'silver'."""
         unicorn = Unicorn("Robert")
@@ -43,7 +41,6 @@ class TestUnicornCreation:
 class TestUnicornCustomColor:
     """Tests for Unicorn with custom color."""
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_can_have_custom_color(self):
         """A Unicorn can be created with a custom color using keyword argument."""
         unicorn = Unicorn("Barbara", color="purple")

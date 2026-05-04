@@ -9,10 +9,16 @@ This module introduces fundamental Python OOP concepts:
 - Methods that return boolean values
 - String formatting with f-strings
 """
+from dataclasses import dataclass
 
 
+@dataclass
 class Unicorn:
-    def __init__(self, name: str) -> None:
-        self.name = name
-        self.color = 'silver'
+    name: str
+    color: str = 'silver'
+
+    def is_silver(self) -> bool:
+        return self.color == 'silver'
+
+    
         
