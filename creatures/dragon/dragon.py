@@ -14,7 +14,26 @@ Key Design Decision:
     This approach prevents state inconsistency - hungry always reflects
     the true state based on meal count, and cannot get out of sync.
 """
+from dataclasses import dataclass
 
 
+@dataclass
 class Dragon:
-    pass
+    name: str
+    color: str
+    rider: str
+    hungry: bool = True
+
+    def __init__(self, name: str, color: str, rider: str):
+        self.name = name
+        self.color = color
+        self.rider = rider
+        self._meals_eaten = 0
+
+    def eat(self):
+        self._meals_eaten += 1
+    
+    @property
+    def hungry(self) -> bool:
+        return self._meals_eaten < 3
+        

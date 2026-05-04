@@ -19,7 +19,6 @@ import pytest
 from creatures.dragon.dragon import Dragon
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestDragonCreation:
     """Tests for Dragon instantiation and attributes."""
 
@@ -39,7 +38,6 @@ class TestDragonCreation:
         assert dragon.rider == "Bilbo"
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestDragonHunger:
     """Tests for Dragon hunger state - the core lesson of this exercise."""
 
@@ -91,7 +89,6 @@ class TestDragonHunger:
         assert dragon.hungry is False
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestDragonMultipleInstances:
     """Tests ensuring each Dragon has independent state."""
 
