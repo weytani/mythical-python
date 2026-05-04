@@ -46,13 +46,11 @@ class TestUnicornCustomColor:
         unicorn = Unicorn("Barbara", color="purple")
         assert unicorn.color == "purple"
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_is_silver_returns_false_for_custom_color(self):
         """is_silver() returns False when color is not 'silver'."""
         unicorn = Unicorn("Barbara", color="purple")
         assert unicorn.is_silver() is False
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_can_have_white_color(self):
         """A Unicorn can be white (common alternative default in other implementations)."""
         unicorn = Unicorn("Snowflake", color="white")
