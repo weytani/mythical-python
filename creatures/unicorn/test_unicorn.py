@@ -61,20 +61,17 @@ class TestUnicornCustomColor:
 class TestUnicornSpeech:
     """Tests for Unicorn speech with sparkles."""
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_says_phrase_with_sparkles(self):
         """say() wraps the phrase in sparkle decorations."""
         unicorn = Unicorn("Johnny")
         assert unicorn.say("Wonderful!") == "**;* Wonderful! *;**"
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_says_different_phrases(self):
         """say() works with any phrase."""
         unicorn = Unicorn("Sparkles")
         assert unicorn.say("Hello") == "**;* Hello *;**"
         assert unicorn.say("I love TDD") == "**;* I love TDD *;**"
 
-    @pytest.mark.skip(reason="Unskip this test to continue")
     def test_unicorn_says_empty_string(self):
         """say() handles empty strings gracefully."""
         unicorn = Unicorn("Silent")

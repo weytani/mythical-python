@@ -16,9 +16,13 @@ from dataclasses import dataclass
 class Unicorn:
     name: str
     color: str = 'silver'
+    sparkles = "**;*"
 
     def is_silver(self) -> bool:
         return self.color == 'silver'
+
+    def say(self, phrase: str) -> str:
+        return f"**;* {phrase} *;**"
 
     
         
