@@ -16,7 +16,28 @@ Boundary Values:
     - Adult: age > 32 (33 and above)
     - Old: age > 100 (101 and above)
 """
+from dataclasses import dataclass
 
 
+@dataclass
 class Hobbit:
-    pass
+    name: str
+    disposition: str = "homebody"
+    age: int = 0
+
+    def changeDispoistion(self, new_disposition: str):
+        self.disposition = new_disposition
+
+    def celebrate_birthday (self):
+        self.age += 1
+
+    @property
+    def is_adult(self):
+        return self.age > 32
+
+    @property
+    def is_old(self):
+        return self.age > 100
+
+    def has_ring(self):
+        return self.name == "Frodo"

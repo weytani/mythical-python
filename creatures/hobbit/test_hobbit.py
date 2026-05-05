@@ -20,7 +20,6 @@ import pytest
 from creatures.hobbit.hobbit import Hobbit
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitCreation:
     """Tests for Hobbit instantiation and default values."""
 
@@ -45,7 +44,6 @@ class TestHobbitCreation:
         assert hobbit.age == 0
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitAging:
     """Tests for Hobbit aging via celebrate_birthday."""
 
@@ -63,7 +61,6 @@ class TestHobbitAging:
         assert hobbit.age == 33
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitAdulthood:
     """Tests for is_adult property - boundary conditions are critical."""
 
@@ -96,7 +93,6 @@ class TestHobbitAdulthood:
         assert hobbit.is_adult is True
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitOldAge:
     """Tests for is_old property - boundary conditions are critical."""
 
@@ -130,7 +126,6 @@ class TestHobbitOldAge:
         assert hobbit.is_adult is True
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitRing:
     """Tests for has_ring method - name-based conditional logic."""
 
@@ -157,7 +152,6 @@ class TestHobbitRing:
         assert hobbit.has_ring() is False
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestHobbitLifecycle:
     """Integration tests for complete Hobbit lifecycle."""
 
