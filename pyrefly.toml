@@ -1,0 +1,5 @@
+[project]
+python_version = "3.13"
+
+[project.source_paths]
+paths = ["."]
