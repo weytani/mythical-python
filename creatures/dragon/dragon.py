@@ -23,6 +23,7 @@ class Dragon:
     color: str
     rider: str
     hungry: bool = True
+    _meals_eaten: int = 0
 
     def __init__(self, name: str, color: str, rider: str):
         self.name = name
