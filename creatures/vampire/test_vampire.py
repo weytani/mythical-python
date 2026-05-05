@@ -64,7 +64,6 @@ class TestVampireThirst:
         assert vampire.thirsty is False
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestVampireMultipleInstances:
     """Tests ensuring each Vampire has independent state."""
 
