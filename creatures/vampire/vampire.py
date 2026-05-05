@@ -13,7 +13,16 @@ Key Design Decision:
     by the caller. A vampire is ALWAYS born thirsty - this is an invariant
     of the class design.
 """
+from dataclasses import dataclass
 
 
+@dataclass
 class Vampire:
-    pass
+    name: str
+    pet: str = "bat"
+    thirsty: bool = True
+
+    def drink(self):
+        self.thirsty = False
+    
+
