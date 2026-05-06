@@ -16,7 +16,21 @@ Key Design Decisions:
     The `booty` attribute demonstrates the accumulator/wallet pattern,
     where value is added incrementally and persists.
 """
+from dataclasses import dataclass
 
 
+@dataclass
 class Pirate:
-    pass
+    name: str
+    job: str = "Scallywag"
+    cursed: bool = False
+    booty: int = 0
+    heinous_acts: int = 0
+
+    def commit_heinous_act(self):
+        """Commit a heinous act."""
+        self.heinous_acts += 1
+        if self.heinous_acts >= 3:
+            self.cursed = True
+
+

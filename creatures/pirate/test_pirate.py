@@ -18,7 +18,6 @@ import pytest
 from creatures.pirate.pirate import Pirate
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateCreation:
     """Tests for Pirate instantiation and default values."""
 
@@ -48,7 +47,6 @@ class TestPirateCreation:
         assert pirate.booty == 0
 
 
-@pytest.mark.skip(reason="Complete Unicorn first, then unskip this test")
 class TestPirateHeinousActs:
     """Tests for cursed state triggered by heinous acts."""
 
